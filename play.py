@@ -12,6 +12,7 @@
 def shop():
     cart = []
     prices= []
+    return_dict={}
     while True:
         choice = input("Welcome to wacky mart, what can i do for you? add to shop, del, to chuck stuff,view to view, quit to checkout!")
         if choice =="add":
@@ -33,8 +34,21 @@ def shop():
                 print(item)
         elif choice =="quit":
             print(cart,sum(prices))
+            for i in range(len(cart)):
+                return_dict[cart[i]] =prices[i]
+            print(return_dict)
             break
         else:
             print("not valid, please try again")
 
 print(shop())
+
+
+
+class shop():
+    def __init__(self) -> None:
+        
+        
+    def add_to_cart():
+    
+    def re
